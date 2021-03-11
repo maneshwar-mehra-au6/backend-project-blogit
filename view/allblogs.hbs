@@ -1,0 +1,63 @@
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <link href="/style9.css" rel="stylesheet">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+        <li id="menu-item-42" class="nav-item  menu-item-42"><a href="/createBlog" class="nav-link">CREATE BLOG</a></li>
+        <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="/publicblog" class="nav-link">PUBLIC BLOGS</a></li>
+        <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="/profile" class="nav-link">PROFILE</a></li>
+        <li id="menu-item-42" class="nav-item  menu-item-42"><a href="/allBlogs" class="nav-link">YOUR BLOG</a></li>
+        <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="/login" class="nav-link">LOGOUT</a></li>
+         <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="/" class="nav-link">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    {{#if data}}
+    {{#each data}}
+    <div class="x">
+    <h1 style="text-align: center;">Title:{{this.Blogtitle}}</h1>
+    <h2 style="text-align: center;">About:{{this.explain}}</h2>
+    <h3 style="text-align: center;">Privecy:{{this.private}}</h3>
+    {{#if this.image.length}}
+    <h3 style="text-align: center;text-decoration:underline">Images</h3>{{#each this.image}}<br>
+    <div class= "image d-flex justify-content-around">
+    <img class="blogimage"src="{{./this.image}}" height="200px" width="200px">
+    <div class= "d-flex align-items-end flex-column bd-highlight mb-3">
+    <a class="v" href="/updatephoto?id={{this._id}}&blogid={{../_id}}">UPDATEPHOTO</a>
+    <br>
+    <a class="v" href="/deletephoto?id={{this._id}}&blogid={{../_id}}">DELETEPHOTO</a>
+    </div>
+    </div>
+    {{/each}}
+    {{/if}}
+     <div class= "image d-flex justify-content-around " style="margin-top:10px;margin-bottom:10px;">
+    <a class="v" href="/updateblog?id={{this._id}}">UPDATEBLOG</a>
+    <a class="v" href="/deleteblog?id={{this._id}}">DELETEBLOG</a>
+    </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <h1>NO BLOCK CREATED YET</h1>
+    {{/if}}
+    {{!-- <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav> --}}
+    {{!-- {{#if items}}
+// render items
+
+{{#each items}}
+// render item
+{{/each}}
+
+{{else}}
+// render empty
+{{/if}} --}}

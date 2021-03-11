@@ -1,0 +1,27 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<form action="/updateblog?id={{this._id}}" method="POST" enctype="multipart/form-data">
+<div class="container">
+    <div class="title">
+    TITLE:<input type="text" name="Blogtitle" value="{{Blogtitle}}" readonly>
+    </div>
+    <div class="about">
+    ABOUT:<input type="text" name="explain" value="{{explain}}" style="font-size: 18pt; height: 500px; width:60vw;">
+    <span>{{error.explain}}</span>
+    </div>
+    <div class="image">
+        IAMGE:<input type="file" name="image" multiple>
+    </div>
+    <div class="radio">
+        MAKE BLOK AS PUBIC OR PRIVATE:<br>
+        <input type="radio" id="private" name="private" value="private">
+        <label for="private">PRIVATE</label><br>
+        <input type="radio" id="public" name="private" value="public">
+        <label for="public">PUBLIC</label><br>
+    </div>
+    <button type="submit">SUBMIT</button>
+</div>
+</form>
+<br>
+<div class="d-flex justify-content-center two">
+<a style="border-radius: 5px; background-color:black;text-decoration:none; color:white;" href="/allBlogs">CANCEL</a>
+</div>

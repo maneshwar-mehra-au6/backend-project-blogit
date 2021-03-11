@@ -1,0 +1,26 @@
+.BLOG{
+    background-color: rgb(169, 226, 188);
+    height: 50vh;
+
+}
+label{
+    margin-left: 50rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.x{
+    display: inline;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.y{
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.blogimage{
+    margin:auto;
+    margin-top: 30px;
+}

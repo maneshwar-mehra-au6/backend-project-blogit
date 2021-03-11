@@ -1,0 +1,41 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link href="/style3.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<h1 style="text-align: center;">BLOGIT</h1>
+<marquee behavior="scroll" direction="down"><h3 style="text-align: center;">Forget Password</h3></marquee>
+
+  <style type="text/css">
+  body {
+        background: linear-gradient(to right, #de6262, #ffb88c);
+    }
+  </style>
+  <div class="abc">
+  <div class="d-flex justify-content-center">
+<div class="form-group">
+    <form action="/forget" method="POST">
+    <label for="email">Email</label>
+    <input type="text" id="email" class="form-control" placeholder="email" name="email"  value={{email}}>
+    <span>{{error.email}}</span><br> 
+    <label for="pet">PetName</label>
+    <input type="text" id="pet" class="form-control" placeholder="Enter pet the name"  name="question" >
+    <span>{{error.question}}</span><br> 
+    <div class="form-group row">
+        <div class="d-flex justify-content-center ">
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+        </div>
+    </div>
+    </div>
+</form>
+</div>
+<br>
+</div>
+ <div class="d-flex justify-content-center two">
+     <div class="x">IF NOT HAVE ACCOUNT:</div>
+<a class="btn btn-primary "style="background-color: rgb(157, 196, 194);" href="/signup">SIGNUP</a>
+ </div>
+ <br>
+<div class="d-flex justify-content-center two">
+    <div class="x">IF TOU WANT TO CANCEL:</div>
+<a href="/login" class="btn btn-primary " style="background-color: rgb(157, 196, 194);">CANCEL</a>
+</div>
+ 

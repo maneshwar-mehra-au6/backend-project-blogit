@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+.BLOG{
+    margin-left: 200px;
+    margin-right: 200px;
+    background: linear-gradient(to right, #f1f2b5, #135058);
+}
+label{
+    margin-left: 50px;
+}
+.h1{
+    font-style:oblique;
+    font-family: 'Monoton', cursive;
+    
+}

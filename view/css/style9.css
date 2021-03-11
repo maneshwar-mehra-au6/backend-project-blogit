@@ -1,0 +1,11 @@
+.x{
+    background: linear-gradient(to right, #f1f2b5, #135058);
+}
+.v{
+    font-weight: bold;
+    background-color:rgba(32, 32, 32, 0.979);
+    color: rgba(247, 237, 228, 0.932);
+    border-radius: 5px;
+    text-decoration: none;
+    
+}

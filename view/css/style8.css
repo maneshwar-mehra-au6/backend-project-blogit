@@ -1,0 +1,22 @@
+.x{
+    margin-top: 250px;
+   background-color: lightseagreen;
+   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+   margin-left: 650px;
+   margin-right: 650px; 
+}
+label{
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+input{
+    margin-left: 20px;
+}
+body{
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+  
+}
+a{
+    margin-top: 30px;
+}

@@ -1,0 +1,55 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link href="/style1.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<h1 style="text-align: center;">BLOGIT</h1>
+
+  <style type="text/css">
+  body {
+         
+       background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    }
+  </style>
+  <div class="ONE">
+      <div class="d-flex justify-content-center">
+<form action="/signin" method="POST" enctype="multipart/form-data">
+<div class="form-group">
+    
+    <label for="fname">FirstName</label>
+    <input type="text" id="fname" class="form-control" placeholder="FirstName"  name="fname" value={{fname}}>
+    <span style="color: rgb(0, 255, 0);">{{error.fname}}</span><br> 
+    <label for="lname">LastName</label>
+    <input type="text" id="lname" class="form-control" placeholder="LastName" name="lname"  value={{lname}}>
+    <span style="color:  rgb(0, 255, 0);;">{{error.lname}}</span><br> 
+    <label for="email">Email</label>
+    <input type="text" id="email" class="form-control" placeholder="email" name="email"  value={{email}}>
+    <span style="color:  rgb(0, 255, 0);;">{{error.email}}</span><br> 
+    <label for="password">Password</label>
+    <input type="password" id="password" class="form-control" placeholder="Password" name="password" >
+    <span style="color:  rgb(0, 255, 0);;">{{error.password}}</span><br> 
+    <label for="pet">PetName</label>
+    <input type="text" id="pet" class="form-control" placeholder="pet name ask on forget password"  name="question" >
+    <span style="color: rgb(0, 255, 0);;">{{error.question}}</span><br> 
+    <label for="file">ProfileImage</label>
+    <input type="file" id="file" class="form-control"  name="image" >
+    <span>{{error.image}}</span><br> 
+    <div class="form-group row">
+        <div class="d-flex justify-content-center ">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </div>
+    </div>
+</form>
+</div>
+<br>
+</div>
+ <div class="d-flex justify-content-center two">
+   <div class="abc">IF YOU HAVE ACCOUNT THAN CLICK:</div>
+<a class="btn btn-primary" style="background-color: rgb(157, 196, 194);" href="/login">LOGIN</a>
+<br>
+<span style="margin-left:40px;margin-right: 20px;">
+     <div class="abc">GO TO HOME:</div>
+<a class="btn btn-primary" style="background-color: rgb(157, 196, 194);" href="/">HOME</a>
+</span>
+
+</div>
+

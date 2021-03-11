@@ -1,0 +1,54 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link href="/style5.css" rel="stylesheet">
+<link href="/style11.css" rel="stylesheet">
+
+
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+        <li id="menu-item-42" class="nav-item  menu-item-42"><a href="/login" class="nav-link">LOGIN</a></li>
+        <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="/signup" class="nav-link">SIGNUP</a></li>
+        <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="/" class="nav-link">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 class="h1" style="text-align: center;">WELCOME   TO    BLOGIT</h1>
+{{#if data}}
+<br>
+<h1 style="text-align: center;">PUBLIC BLOGS ARE</h1>
+
+{{#each data}}
+
+<div class="BLOG">
+  <label>Title:</label>
+  <div class="x">{{this.Blogtitle}}</div>
+<br>
+<label>About:</label>
+<div class="x">{{this.explain}}</div>
+<br>
+<label>Written By:</label>
+<div class="x">{{this.userID.fname}} {{this.userID.lname}}</div>
+
+
+<br>
+<div class="d-flex justify-content-between">
+{{#each this.image}}
+<img class="blogimage"src="./{{this.image}}" width="200px" height="200px">
+{{/each}}
+<br>
+</div>
+</div>
+
+{{/each}}
+{{else}}
+<h1 style="color: rgba(255, 255, 255, 0.966); text-align:center;">  WRITE YOUR OWN BLOG AND SHOW TO OTHERS</h1>
+<div class="image d-flex justify-content-around">
+  <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YmxvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2500&q=260" width="500px" height="600px">
+    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2500&q=260" width="500px" height="600px">
+      <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8YmxvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2500&q=260" width="500px" height="600px">
+
+</div>
+{{/if}}

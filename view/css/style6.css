@@ -1,0 +1,12 @@
+
+label{
+    margin-left: 20px;
+    font-size: larger;
+    font-weight: 900;
+}
+.x{
+    display: inline;
+}
+.z{
+    background-color: rgb(236, 195, 236);
+}

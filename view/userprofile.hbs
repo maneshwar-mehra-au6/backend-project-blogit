@@ -1,0 +1,57 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link href="/style7.css" rel="stylesheet">
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+        <li id="menu-item-42" class="nav-item  menu-item-42"><a href="/createBlog" class="nav-link">CREATE BLOG</a></li>
+        <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="/publicblog" class="nav-link">PUBLIC BLOGS</a></li>
+        <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="/profile" class="nav-link">PROFILE</a></li>
+        <li id="menu-item-42" class="nav-item  menu-item-42"><a href="/allBlogs" class="nav-link">YOUR BLOG</a></li>
+        <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="/login" class="nav-link">LOGOUT</a></li>
+         <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="/" class="nav-link">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+
+<div class="x">
+<div class="d-flex align-items-center flex-column bd-highlight mb-3">
+<div><h1 style="display: inline;">Name:</h1> <h1 style="display: inline;">{{fname}} {{lname}}</h1>
+</div>
+
+<br>
+<div>
+  <h1 style="display: inline;">Email:</h1> <h1 style="display: inline;">{{email}}</h1>
+
+</div>
+<br>
+<div>
+{{#if image}}
+<img src="./{{image}}" alt="uerpic"width="200px" height="200px">
+
+{{/if}}
+</div>
+<div>
+  <br>
+{{#if image}}
+<a class="btn btn-primary" href="/updateprofilpic?id={{_id}}">UPDATE PROFILEPIC</a>
+{{else}}
+<a class="btn btn-primary" href="/updateprofilpic?id={{_id}}">ADD PROFILEPIC</a>
+{{/if}}
+</div>
+<div>
+  <br>
+{{#if image}}
+<a class="btn btn-primary" href="/deleteprofilpic?id={{_id}}">DELETE PROFILEPIC</a>
+{{/if}}
+</div>
+<br>
+<div>
+  <h1 style="display: inline;">TOTAL BLOG CREATED:</h1> <h1 style="display: inline;">{{data.length}}</h1>
+
+</div>
+<br>
+<div>
+</div>
