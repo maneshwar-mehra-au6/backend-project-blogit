@@ -20,6 +20,7 @@ import dislike from "./routes/dislike"
 import comment from './routes/comment';
 import deletcomment from "./routes/deletecomment"
 import  first from "./routes/first"
+import search from "./routes/searchonhome"
 const multer=require("multer")
 const express=require("express")
 const route=express.Router()
@@ -107,4 +108,5 @@ route.post("/comment",arth.arth,comment.postcomments)
 
 route.get('/deletecomment',arth.arth,deletcomment.deletcomment.deletcomment)
 route.get('/',first.blogifind.blogfind)
+route.post('/search',search.search.blogfind)
 export default{route}

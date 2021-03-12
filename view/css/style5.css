@@ -1,6 +1,7 @@
 .BLOG{
     background-color: rgb(169, 226, 188);
     height: 50vh;
+    border-radius: 40px;
 
 }
 label{

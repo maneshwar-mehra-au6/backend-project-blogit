@@ -17,10 +17,6 @@
 </nav>
 <h1 class="h1" style="text-align: center;">WELCOME   TO    BLOGIT</h1>
 {{#if data}}
-<form class="d-flex justify-content-center pqr" action="/search" method="POST">
-  <input type="text" name="search" placeholder="enter the title name" value="{{search}}">
-  <button type="submit">SUBMIT</button>
-</form>
 <br>
 <h1 style="text-align: center;">PUBLIC BLOGS ARE</h1>
 
@@ -48,10 +44,8 @@
 
 {{/each}}
 {{else}}
-<h1 style="color: black; text-align:center;">  WRITE YOUR OWN BLOG AND SHOW TO OTHERS</h1>
-<div class="image d-flex justify-content-around t">
-  <img src="/second.png" alt="image">
-  <img src="/fifth.png" alt="image">
-  <img src="/forth.png" alt="image">
+<h1 style="color: black; text-align:center;">  NO BLOCKS FOUND</h1>
+<div class="image d-flex justify-content-around">
+    <img src='./my.jpg' alt="image">
 </div>
 {{/if}}
